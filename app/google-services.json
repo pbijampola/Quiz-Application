@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67102789932",
+    "project_id": "appquiz-e0cb8",
+    "storage_bucket": "appquiz-e0cb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67102789932:android:1b1f20f5a9ded3dd209c89",
+        "android_client_info": {
+          "package_name": "com.example.appquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67102789932-50e9957jduoojaqkm2p5d6aiaons6fj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzd_F7p0YZ66NyldPDRjRFGXK34E5OPEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67102789932-50e9957jduoojaqkm2p5d6aiaons6fj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

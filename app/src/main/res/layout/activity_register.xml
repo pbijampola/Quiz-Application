@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".RegisterActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="60dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img"
+            android:scaleType="center"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO QUIZ APP"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/usernameid"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:textColorHint="#FFA500"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editshape"
+        android:padding="9dp"/>
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:textColorHint="#FFA500"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editshape"
+        android:padding="9dp"/>
+    <EditText
+        android:id="@+id/passwordid"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textStyle="italic"
+        android:textColorHint="#FFA500"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editshape"
+        android:padding="9dp"/>
+    <Button
+        android:id="@+id/signupid"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Sign Up"
+        android:textStyle="italic"
+        android:textColorHint="@color/white"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:padding="9dp"/>
+    <Button
+        android:id="@+id/alreadyaccount"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Already have an account"
+        android:textColorHint="@color/white"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:padding="9dp"/>
+
+
+
+</LinearLayout>
+
+</LinearLayout>
