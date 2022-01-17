@@ -4,12 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -24,6 +28,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     EditText email,password;
+    TextView forgotpassword;
     Button loginbtn;
     String emailPattern= "[a-zA-Z0-9._-]+@[a-z]+\\._[a-z]+";
     ProgressDialog progressDialog;
@@ -45,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.login_mail);
         password = findViewById(R.id.login_password);
         loginbtn = findViewById(R.id.loginbtnid);
+        forgotpassword= findViewById(R.id.forgotpasswordid);
         progressDialog = new ProgressDialog(this);
 
         mAuth= FirebaseAuth.getInstance();
@@ -71,6 +77,16 @@ public class LoginActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
+
+        //Forgot password Event
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,ForgotPasswordActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +95,19 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+
+
     private void appLogin() {
+
+        //Checking internet connection
+        if(!isconnected()){
+            Toast.makeText(getApplicationContext(), "NO INTERNET ACCESS", Toast.LENGTH_SHORT).show();
+
+        }
+        else{
+            Toast.makeText(getApplicationContext(), "CONNECTED", Toast.LENGTH_SHORT).show();
+        }
+
 
         String mail = email.getText().toString();
         String passwd = password.getText().toString();
@@ -112,6 +140,13 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+ private boolean isconnected() {
+      ConnectivityManager connectivityManager=(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+     return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
+   }
+
+
+
 
     private void sendUserToHomeActivity() {
         Intent intent = new Intent(LoginActivity.this,HomeActivity.class);

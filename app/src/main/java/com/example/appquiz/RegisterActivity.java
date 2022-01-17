@@ -102,6 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         if(!mail.matches(emailPattern)){
             email.setError("Enter correct E-mai");
+
         }
         if(passwd.isEmpty()||passwd.length()<8){
             password.setError("Enter Correct Password");

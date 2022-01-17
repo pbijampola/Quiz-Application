@@ -3,4 +3,70 @@
     <string name="invalid_username">Please Enter Valid UserName</string>
     <string name="invalid_email">Please Enter Valid E-mail Address</string>
     <string name="invalid_password">Please Enter Valid Password</string>
+
+
+    <string name="score">SCORE 0/8</string>
+    <string name="questions">1/8 QUESTIONS</string>
+    <string name="question1">Which Programming Language is best for Machine Language?</string>
+    <string name="question1_A">R</string>
+    <string name="question1_B">PHP</string>
+    <string name="question1_C">JAVASCRIPT</string>
+    <string name="question1_D">PYTHON</string>
+    <string name="answer_1">PYTHON</string>
+
+
+    <string name="question2">Which Programming Language is best for Machine Language?</string>
+    <string name="question2_A">R</string>
+    <string name="question2_B">PHP</string>
+    <string name="question2_C">JAVASCRIPT</string>
+    <string name="question2_D">PYTHON</string>
+    <string name="answer_2">PYTHON</string>
+
+
+    <string name="question3">Which Programming Language is best for Machine Language?</string>
+    <string name="question3_A">R</string>
+    <string name="question3_B">PHP</string>
+    <string name="question3_C">JAVASCRIPT</string>
+    <string name="question3_D">PYTHON</string>
+    <string name="answer_3">PYTHON</string>
+
+
+    <string name="question4">Which Programming Language is best for Machine Language?</string>
+    <string name="question4_A">R</string>
+    <string name="question4_B">PHP</string>
+    <string name="question4_C">JAVASCRIPT</string>
+    <string name="question4_D">PYTHON</string>
+    <string name="answer_4">PYTHON</string>
+
+
+    <string name="question5">Which Programming Language is best for Machine Language?</string>
+    <string name="question5_A">R</string>
+    <string name="question5_B">PHP</string>
+    <string name="question5_C">JAVASCRIPT</string>
+    <string name="question5_D">PYTHON</string>
+    <string name="answer_5">PYTHON</string>
+
+
+    <string name="question6">Which Programming Language is best for Machine Language?</string>
+    <string name="question6_A">R</string>
+    <string name="question6_B">PHP</string>
+    <string name="question6_C">JAVASCRIPT</string>
+    <string name="question6_D">PYTHON</string>
+    <string name="answer_6">PYTHON</string>
+
+
+    <string name="question7">Which Programming Language is best for Machine Language?</string>
+    <string name="question7_A">R</string>
+    <string name="question7_B">PHP</string>
+    <string name="question7_C">JAVASCRIPT</string>
+    <string name="question7_D">PYTHON</string>
+    <string name="answer_7">PYTHON</string>
+
+
+    <string name="question8">Which Programming Language is best for Machine Language?</string>
+    <string name="question8_A">R</string>
+    <string name="question8_B">PHP</string>
+    <string name="question8_C">JAVASCRIPT</string>
+    <string name="question8_D">PYTHON</string>
+    <string name="answer_8">PYTHON</string>
 </resources>
