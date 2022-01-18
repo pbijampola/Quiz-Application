@@ -69,4 +69,6 @@
     <string name="question8_C">JAVASCRIPT</string>
     <string name="question8_D">PYTHON</string>
     <string name="answer_8">PYTHON</string>
+    <string name="correct_answer">CORRECT ANSWER</string>
+    <string name="select_option">SELECT OPTION</string>
 </resources>

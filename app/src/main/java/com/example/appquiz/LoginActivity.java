@@ -140,6 +140,8 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+
+    //Internet connection
  private boolean isconnected() {
       ConnectivityManager connectivityManager=(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
      return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();

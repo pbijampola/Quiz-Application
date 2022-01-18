@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Patterns;
@@ -95,6 +97,14 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void checkAuth() {
+        // checking internet connection
+        if(!isconnected()){
+            Toast.makeText(getApplicationContext(), "NO INTERNET ACCESS", Toast.LENGTH_SHORT).show();
+
+        }
+        else{
+            Toast.makeText(getApplicationContext(), "CONNECTED", Toast.LENGTH_SHORT).show();
+        }
         // getting the edit fields first
         String name_=username.getText().toString();
         String mail=email.getText().toString();
@@ -129,6 +139,11 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             });
         }
+    }
+    //Internet connection
+    private boolean isconnected() {
+        ConnectivityManager connectivityManager=(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
     private void sendUserToLoginActivity() {

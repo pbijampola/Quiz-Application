@@ -25,7 +25,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SELECT OPTION"
+            android:text="@string/select_option"
+            android:visibility="gone"
             android:id="@+id/select_option"
             android:textAlignment="center"
             android:textColor="@color/white"/>
@@ -34,8 +35,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/correct_answer"
             android:textColor="@color/white"
+            android:visibility="gone"
             android:textAlignment="center"
-            android:text="CORRECT ANSWER"/>
+            android:text="@string/correct_answer"/>
     </LinearLayout>
 
     <LinearLayout
@@ -96,7 +98,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:id="@+id/option_c"
+            android:id="@+id/option_C"
             android:background="@drawable/optiondesign"
             android:text="@string/question1_C"
             android:textAlignment="center"
